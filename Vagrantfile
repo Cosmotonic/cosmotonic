@@ -23,17 +23,20 @@ Vagrant.configure("2") do |config|
       apt install -y docker.io git curl
       
       cd /root
-      rm -rf cosmotonic
-      git clone https://$GIT_TOKEN@github.com/Cosmotonic/cosmotonic.git
       
-      cd /root/cosmotonic
+      if [ -d "cosmotonic" ]; then
+        echo "Repo exists, pulling latest..."
+        cd cosmotonic
+        git pull
+      else
+        echo "Cloning repo..."
+        git clone https://$GIT_TOKEN@github.com/Cosmotonic/cosmotonic.git
+        cd cosmotonic
+      fi
+      
       docker build -t mysite .
+      docker stop $(docker ps -q) || true
       docker run -d -p 80:80 mysite
-      
-      curl -X POST "https://api.digitalocean.com/v2/reserved_ips/159.89.215.163/actions" \
-        -H "Authorization: Bearer ${DO_TOKEN}" \
-        -H "Content-Type: application/json" \
-        -d '{"type":"assign","droplet_id":'$(curl -s http://169.254.169.254/metadata/v1/id)'}'
     SHELL
   end
 end
