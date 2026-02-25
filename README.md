@@ -1,4 +1,4 @@
-# costmotonic
+# cosmotonic
 
 Enter Server: ssh root@167.71.54.218
 
@@ -12,5 +12,3 @@ ssh -i ~/.ssh/id_ed25519 root@159.89.215.163
 git pull
 docker build -t mysite .
 docker stop cosmotonic && docker rm cosmotonic && docker run -d -p 80:80 --name cosmotonic mysite
-
-# Vagrant commands 
