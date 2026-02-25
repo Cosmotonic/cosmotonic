@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/MScSDGit/Semester02/DevOps/Cosmotonic/cosmotonic","disabled":false,"__vagrantfile":true,"owner":"root","group":"root"}}}

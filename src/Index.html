@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <span class="nav-logo">Kasper Larsson</span>
+        <ul class="nav-links">
+            <li><a href="#om">Om</a></li>
+            <li><a href="#projekter">Projekter</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-tag">Softwareudvikler med speciale i backend.</div>
+        <h1 class="hero-title">Kasper<br><span class="accent">Larsson</span></h1>
+        <p class="hero-sub">Jeg bygger software der virker.</p>
+        <div class="hero-line"></div>
+    </section>
+
+    <!-- OM MIG -->
+    <section class="section" id="om">
+        <div class="section-label">01 — Om mig</div>
+        <div class="om-grid">
+            <div class="om-text">
+                <h2>Hvem er jeg?</h2>
+                <p>Skriv lidt om dig selv her. Hvad interesserer dig, hvad arbejder du med, hvad er du god til.</p>
+                <p>Hold det kort og direkte.</p>
+            </div>
+            <div class="om-stats">
+                <div class="stat">
+                    <span class="stat-num">0+</span>
+                    <span class="stat-label">Års erfaring</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Studie Projekter</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Masser af Kaffe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJEKTER -->
+    <section class="section" id="projekter">
+        <div class="section-label">02 — Projekter</div>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-num">001</div>
+                <h3 class="project-title">Minitwit</h3>
+                <p class="project-desc">En Twitter-klon bygget i Java. Kører på Docker og deployes til Digital Ocean via CI/CD pipeline.</p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Docker</span>
+                    <span>SQLite</span>
+                </div>
+                <a href="#" class="project-link">Se projekt →</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">002</div>
+                <h3 class="project-title">Projekt navn</h3>
+                <p class="project-desc">Kort beskrivelse af hvad projektet gør og hvilke teknologier der er brugt.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>React</span>
+                </div>
+                <a href="#" class="project-link">Se projekt →</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">003</div>
+                <h3 class="project-title">Projekt navn</h3>
+                <p class="project-desc">Kort beskrivelse af hvad projektet gør og hvilke teknologier der er brugt.</p>
+                <div class="project-tags">
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <a href="#" class="project-link">Se projekt →</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section" id="cv">
+        <div class="section-label">03 — Erfaring</div>
+        <div class="cv-list">
+
+            <div class="cv-item">
+                <div class="cv-year">2024 —</div>
+                <div class="cv-content">
+                    <h3>Stillingsbetegnelse</h3>
+                    <span class="cv-company">Firmanavn</span>
+                    <p>Hvad lavede du her. Hold det kort — 1-2 sætninger.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-year">2022 — 2024</div>
+                <div class="cv-content">
+                    <h3>Stillingsbetegnelse</h3>
+                    <span class="cv-company">Firmanavn</span>
+                    <p>Hvad lavede du her. Hold det kort — 1-2 sætninger.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-year">2020 — 2022</div>
+                <div class="cv-content">
+                    <h3>Uddannelse</h3>
+                    <span class="cv-company">Uddannelsessted</span>
+                    <p>Hvad studerede du.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+        <div class="section-label">04 — Kontakt</div>
+        <div class="kontakt-wrapper">
+            <h2 class="kontakt-heading">Lad os snakke.</h2>
+            <div class="kontakt-links">
+                <a href="mailto:contactkasperlarsson@gmail.com" class="kontakt-link">
+                    <span class="kontakt-type">Email</span>
+                    <span>contactkasperlarsson@gmail.com   →</span>
+                </a>
+                <a href="https://github.itu.dk/kasla/" class="kontakt-link" target="_blank">
+                    <span class="kontakt-type">GitHub</span>
+                    <span>github.com/kasla    →</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kasper-larsson/" class="kontakt-link" target="_blank">
+                    <span class="kontakt-type">LinkedIn</span>
+                    <span>linkedin.com/in/kasper-larsson/   →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>© 2025 Dit Navn</span>
+        <span>Bygget med HTML & CSS</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
