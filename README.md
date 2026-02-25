@@ -1,4 +1,4 @@
-# costmotonic
+# cosmotonic
 
 Enter Server: ssh root@167.71.54.218
 
