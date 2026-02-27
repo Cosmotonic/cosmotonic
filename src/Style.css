@@ -6,8 +6,9 @@
     --bg-card:   #111111;
     --border:    #222222;
     --text:      #e8e8e8;
-    --muted:     #555555;
+    --muted:     #a0a0a0;
     --accent:    #c8f135;
+    --edu:       #2C5F8A;
     --font-head: 'Syne', sans-serif;
     --font-mono: 'Space Mono', monospace;
 }
@@ -159,7 +160,7 @@ a {
 }
 
 .section-label {
-    font-size: 0.7rem;
+    font-size: 1.175rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--muted);
@@ -327,7 +328,7 @@ a {
 }
 
 .cv-year {
-    font-size: 0.75rem;
+    font-size: 1.15rem;
     color: var(--muted);
     padding-top: 0.3rem;
     letter-spacing: 0.05em;
@@ -354,6 +355,15 @@ a {
     font-size: 0.85rem;
 }
 
+.cv-education h3 {
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: var(--edu);
+}
+
+
 /* ==============================
    KONTAKT
 ============================== */
@@ -365,8 +375,8 @@ a {
 
 .kontakt-heading {
     font-family: var(--font-head);
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 600;
     line-height: 1;
 }
 
