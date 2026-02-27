@@ -362,6 +362,9 @@ a {
     margin-bottom: 0.3rem;
     color: var(--edu);
 }
+#cv {
+    border-bottom: none;
+}
 
 
 /* ==============================
@@ -477,4 +480,37 @@ a {
         flex-direction: column;
         gap: 0.5rem;
     }
+}
+
+/* ==============================
+   SKILLS
+============================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.skills-group h3 {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.skills-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.skills-group ul li {
+    font-size: 0.85rem;
+    color: var(--muted);
 }
