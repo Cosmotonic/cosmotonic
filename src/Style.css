@@ -6,7 +6,7 @@
     --bg-card:   #111111;
     --border:    #222222;
     --text:      #e8e8e8;
-    --muted:     #a0a0a0;
+    --muted:     #ffffff;
     --accent:    #c8f135;
     --edu:       #2C5F8A;
     --font-head: 'Syne', sans-serif;
@@ -84,12 +84,12 @@ a {
    HERO
 ============================== */
 .hero {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 4rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
     border-bottom: 1px solid var(--border);
     position: relative;
     overflow: hidden;
@@ -118,7 +118,7 @@ a {
 
 .hero-title {
     font-family: var(--font-head);
-    font-size: clamp(5rem, 15vw, 12rem);
+    font-size: clamp(3rem, 10vw, 8rem);
     font-weight: 600;
     line-height: 0.9;
     letter-spacing: -0.03em;
