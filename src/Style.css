@@ -2,8 +2,8 @@
    VARIABLES & RESET
 ============================== */
 :root {
-    --bg:        #ff0000;
-    --bg-card:   #ff0000;
+    --bg:        #000000;
+    --bg-card:   #000000;
     --border:    #222222;
     --text:      #e8e8e8;
     --muted:     #ffffff;
