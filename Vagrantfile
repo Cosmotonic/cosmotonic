@@ -37,6 +37,17 @@ Vagrant.configure("2") do |config|
       docker build -t mysite .
       docker stop $(docker ps -q) || true
       docker run -d -p 80:80 mysite
+
+        # Install doctl
+      curl -sL https://github.com/digitalocean/doctl/releases/download/v1.104.0/doctl-1.104.0-linux-amd64.tar.gz | tar -xzv
+      mv doctl /usr/local/bin
+
+      # Authenticate
+      doctl auth init --access-token $DO_TOKEN
+
+      # Assign reserved IP to this droplet
+      DROPLET_ID=$(curl -s http://169.254.169.254/metadata/v1/id)
+      doctl compute reserved-ip-action assign 159.89.215.163 $DROPLET_ID
     SHELL
   end
 end
